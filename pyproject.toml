@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zero-width-messages"
+version = "0.1.0"
+description = "A dependency-free codec and CLI for checksummed hidden text using zero-width Unicode"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Zero Width Lab team at CodePhFox" }]
+keywords = ["steganography", "unicode", "zero-width", "messaging", "discord", "imessage", "cli"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Communications :: Chat",
+]
+
+[project.scripts]
+zero-width-message = "zero_width_messages.cli:main"
+
+[project.optional-dependencies]
+dev = ["ruff==0.16.4"]
+
+[project.urls]
+Repository = "https://github.com/CodePhFox/zero-width-messages"
+Documentation = "https://github.com/CodePhFox/zero-width-messages/blob/main/docs/PROTOCOL.md"
+Issues = "https://github.com/CodePhFox/zero-width-messages/issues"
+Security = "https://github.com/CodePhFox/zero-width-messages/security/policy"
+
+[tool.setuptools.packages.find]
+where = ["src"]

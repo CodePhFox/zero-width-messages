@@ -1,0 +1,26 @@
+# Zero Width Messages
+
+> Dependency-free Python reference implementation of the Zero Width Lab ZWM1 framed
+> message protocol by the CodePhFox team.
+
+## Primary documentation
+
+- [README](README.md): installation, examples, limitations, and responsible use.
+- [Agent guide](AGENTS.md): repository map, invariants, safety rules, and verification commands.
+- [Protocol specification](docs/PROTOCOL.md): exact alphabet, frame layout, encoding, decoding, and compatibility.
+- [Security policy](SECURITY.md): security boundary and private reporting.
+- [Contributing guide](CONTRIBUTING.md): development and pull-request workflow.
+
+## Core source
+
+- [Public API](src/zero_width_messages/__init__.py): supported imports.
+- [Protocol implementation](src/zero_width_messages/codec.py): framing and codec behavior.
+- [Command-line interface](src/zero_width_messages/cli.py): local CLI and clipboard integration.
+- [Package metadata](pyproject.toml): Python support, dependencies, and console entry point.
+
+## Required constraints
+
+- Do not add account automation, tokens, webhooks, or network sending.
+- Do not call the hidden payload encrypted, secure, private, or undetectable.
+- Preserve ZWM1 compatibility or introduce a new explicit protocol version.
+- Preserve LICENSE and NOTICE attribution.

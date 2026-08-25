@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite the Zero Width Lab team at CodePhFox.
+title: Zero Width Messages
+type: software
+authors:
+  - name: Zero Width Lab team at CodePhFox
+version: 0.1.0
+date-released: 2026-08-25
+repository-code: https://github.com/CodePhFox/zero-width-messages
+url: https://github.com/CodePhFox/zero-width-messages
+license: Apache-2.0
+keywords:
+  - Unicode
+  - zero-width
+  - steganography
+  - messaging
