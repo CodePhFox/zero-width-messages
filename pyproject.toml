@@ -28,7 +28,7 @@ classifiers = [
 zero-width-message = "zero_width_messages.cli:main"
 
 [project.optional-dependencies]
-dev = ["ruff==0.16.4"]
+dev = ["ruff==0.16.5"]
 
 [project.urls]
 Repository = "https://github.com/CodePhFox/zero-width-messages"
